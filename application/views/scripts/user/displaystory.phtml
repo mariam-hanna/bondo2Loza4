@@ -1,0 +1,27 @@
+
+    <div style="background-color: white;padding:50px;position: absolute;top:95%;left:50%" DIR="RTL">
+        <ul>
+            <?php
+            if (isset($this->advices)) {
+                foreach ($this->advices as $advice) {
+                    ?>
+
+                    <li><strong><?= $advice['question'] ?></strong><br>
+                    <?= $advice['answer'] ?><br><br>
+                    </li>
+
+
+                    <?php
+                }
+            }
+            ?>
+        </ul>
+    </div>
+
+    <?php
+        //$this->story = "cat1_nosebleeding.html";
+        include "../public/$this->story"
+    ?>
+
+</body>
+

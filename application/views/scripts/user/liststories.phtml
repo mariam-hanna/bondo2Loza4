@@ -1,0 +1,34 @@
+
+<br><br><br>
+
+<table class = "table">
+    <thead>
+        <tr>
+            <th>
+                Story Name
+            </th>
+
+
+        </tr>
+    </thead>
+    <?php
+    foreach ($this->stories as $story) {
+        ?>
+
+        <tr class="success">
+            <td>
+                <a href="<?= $this->baseUrl() ?>/user/displaystory/story/<?=$story['path']?>"><?= $story['name'] ?></a>
+            </td>
+
+        </tr>
+
+
+
+        <?php
+    }
+    ?>
+
+</table>
+
+
+
